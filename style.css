@@ -6,6 +6,18 @@ body {
 }
 
 /* HEADER */
+/* Make sure the menu is on top of everything */
+header .menu {
+    font-size: 28px;   /* big enough to see */
+    cursor: pointer;
+    color: #111;       /* dark color */
+    z-index: 1001;     /* above the header shadow */
+}
+
+/* Optional: add hover effect */
+header .menu:hover {
+    color: #555;
+}
 header {
     display: flex;
     justify-content: space-between;
